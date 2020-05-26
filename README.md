@@ -1,17 +1,17 @@
 # jav-info
 根据番号查询jav信息，生成nfo文件，并将视频文件分类到文件夹中
-#运行环境
+# 运行环境
 PHP5.6或以上，Apache或Nginx，暂时不需要mysql
-#部署项目
+# 部署项目
 直接将项目解压到Apache或Nginx的默认网站根目录。\
 如果保留了jav-info文件夹，就在浏览器中输入localhost/jav-info\
 如果没有保留jav-info文件夹，直接输入localhost打开
-#要求
+# 要求
 * 你的电影文件名都有番号。
 * 你有稳定的梯子，能用socke5方式，且本地端口为1080,也可以自行修改项目中的端口号：
     1. libraries/Util.php文件，http_request方法，if($proxy)判断下，修改CURLOPT_PROXYPORT的值。
     2. controllers/Jav_info.php文件，download_img方法，修改CURLOPT_PROXYPORT的值。
-#使用方法
+# 使用方法
 1. 将所有电影文件存放到一个文件夹中。
 2. 填写基础路径。基础路径为你的电影文件存放的文件夹路径。
 3. 点击文件路径下选择文件按钮，选择电影文件。
