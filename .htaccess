@@ -1,0 +1,3 @@
+RewriteEngine on 
+RewriteCond $1 !^(index\.php|style|static|robots\.txt) 
+RewriteRule ^(.*)$ /jav/index.php/$1 [L]
